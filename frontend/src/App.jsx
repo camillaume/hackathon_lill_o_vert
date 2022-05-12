@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import SApp from "./AppStyle";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 import Consume from "./pages/Consume";
 import Mobility from "./pages/Mobility";
 import Sources from "./pages/Sources";
@@ -15,8 +15,8 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="*" element={<Home />} />
-            <Route path="/" element={<Home />} />
+            {/* // <Route path="*" element={<Home />} /> */}
+            {/* // <Route path="/" element={<Home />} /> */}
             <Route path="/consume" element={<Consume />} />
             <Route path="/mobility" element={<Mobility />} />
             <Route path="/sources" element={<Sources />} />
