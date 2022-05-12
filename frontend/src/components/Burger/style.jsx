@@ -62,5 +62,8 @@ export default styled.div`
     .hamburger {
       display: none;
     }
+    .nav {
+      display: none;
+    }
   }
 `;
