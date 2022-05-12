@@ -10,7 +10,7 @@ export default function Footer() {
             <li>SOURCES</li>
           </NavLink>
           <NavLink to="/team">
-            <li>L'EQUIPE</li>
+            <li>L&apos;EQUIPE</li>
           </NavLink>
         </ul>
       </div>
