@@ -23,7 +23,7 @@ function App() {
             {/* <Route path="/team" element={<Team />} /> */}
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </SApp>
     </div>
   );
