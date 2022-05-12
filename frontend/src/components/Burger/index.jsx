@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import SBurger from "./style";
 
 export default function Burger({ ...props }) {
@@ -26,11 +26,11 @@ export default function Burger({ ...props }) {
     </SBurger>
   );
 }
-// Burger.propTypes = {
-//   burger: PropTypes.bool,
-//   func: PropTypes.func,
-// };
-// Burger.defaultProps = {
-//   burger: false,
-//   func: () => {},
-// };
+Burger.propTypes = {
+  burger: PropTypes.bool,
+  func: PropTypes.func,
+};
+Burger.defaultProps = {
+  burger: false,
+  func: () => {},
+};
