@@ -39,8 +39,8 @@ export default function Team() {
   return (
     <Style>
       <div className="team">
-        <h3 className="title">L&apos;EQUIPE</h3>
-        <ul>
+        <h1 className="title">L&apos;équipe</h1>
+        <ul className="contact-container">
           {contacts.map((contact) => (
             <li className="contact" key={contact.name}>
               <h2>{contact.name}</h2>
