@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export default styled.section`
   section {
-    background-color: var(--main-color);
+    background-color: rgba(201, 154, 125, 0.4);
     width: 25vw;
     aspect-ratio: 1/1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* border: solid 0.5px red; */
+    border-radius:10px
   }
-
   .ensemble {
     display: flex;
     flex-direction: column;
@@ -22,9 +21,7 @@ export default styled.section`
     text-align: center;
     margin: 5px;
   }
-
   img {
-    /* border: solid 0.5px blue; */
     width: 9vw;
     aspect-ratio: 1/1;
     background-image: contain;
@@ -33,8 +30,24 @@ export default styled.section`
     background-size: 7vw;
   }
   h2 {
-    /* border: solid 0.5px blue; */
     text-align: center;
     margin-top: 3px;
+    font-weight: bold;
+  }
+
+  
+  @media screen and (max-width: 700px) {
+    section {
+    width: 90vw;
+    aspect-ratio: 1/1;
+    margin-top:25px;
+  }
+  .ensemble {
+    width: 30vw;
+    aspect-ratio: 1/1;
+    margin: 10px;
+  }
+  img {
+    width: 30vw;
   }
 `;

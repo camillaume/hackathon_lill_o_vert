@@ -15,7 +15,7 @@ function Mobility() {
 
         <div className="components">
           <Vehicule />
-          <Calculator />
+          <Calculator className="calculator" />
         </div>
       </div>
     </SMobility>
