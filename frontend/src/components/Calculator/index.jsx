@@ -12,7 +12,7 @@ const calculator = () => {
 
   useEffect(() => {
     if (!curvehicle.emissions) return;
-    setCo2(Math.round(curvehicle.emissions.kgco2e * kms * 1000) / 1000);
+    setCo2(Math.round(curvehicle.emissions.kgco2e * kms * 220 * 1000) / 1000);
   }, [kms, curvehicle]);
 
   const calcMeatMeal = () => {
