@@ -52,8 +52,13 @@ export default function Vehicule() {
       <section>
         <form onSubmit={hSubmit}>
           <p>Trajet quotidien aller/retour (kms)</p>
-          <input id="nbKm" type="number" value={kms} onChange={hChange} />
-          <input type="submit" value="OK" />
+          <input
+            className="nbKm"
+            type="number"
+            value={kms}
+            onChange={hChange}
+          />
+          <input className="ok" type="submit" value="OK" />
         </form>
         <div className="comparison">
           <div className="images">
