@@ -20,7 +20,6 @@ export default styled.div`
     width: 100vw;
     margin: auto;
     margin-top: 2.15rem;
-    //height: 27vh;
   }
   p {
     color: rgba(232, 225, 221);
@@ -46,7 +45,7 @@ export default styled.div`
   @media screen and (min-width: 700px) {
     .baseline {
       position: relative;
-      width: 35em;
+      width: 34em;
       margin: auto;
       margin-top: 3rem;
     }
@@ -70,30 +69,11 @@ export default styled.div`
       width: 100vw;
       background-color: var(--main-color);
     }
-    display {
-      position: relative;
-    }
-    .quote1 {
-      display: block;
-      height: 2rem;
-      position: absolute;
-      top: 72%;
-      left: -45.5%;
-    }
-
-    .quote2 {
-      display: block;
-      height: 2rem;
-      position: absolute;
-      bottom: 10%;
-      right: 3%;
-      width: auto;
-    }
 
     .text {
       line-height: 1.7rem;
       font-size: 1.5rem;
-      height: 20vh;
+      height: 18.5vh;
       padding-right: 6.5rem;
       padding-left: 6.5rem;
     }
