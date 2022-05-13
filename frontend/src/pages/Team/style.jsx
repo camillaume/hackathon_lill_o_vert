@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default styled.div`
   .team {
     border-radius: 10px;
-    background-color: var(--white-opacity);
+    background-color: var(--back-color);
     font-family: var(--font-family);
     font-size: 0.65rem;
   }
