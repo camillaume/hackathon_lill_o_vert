@@ -35,7 +35,7 @@ export default styled.div`
     line-height: 1.5rem;
   }
   .quote1,
-  quote2 {
+  .quote2 {
     display: none;
   }
 
