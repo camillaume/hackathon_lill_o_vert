@@ -5,15 +5,15 @@ export default styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
   box-sizing: border-box;
   background-color: var(--back-color);
   text-align: center;
   height: 85vh;
   width: auto;
   font-family: var(--font-family);
+  color: var(--color);
 
-  h2 {
+  h1 {
     font-weight: bold;
     font-size: 2rem;
   }
@@ -33,15 +33,16 @@ export default styled.section`
   }
 
   @media screen and (min-width: 700px) {
-    border: 2px solid red;
     box-sizing: border-box;
     height: 75vh;
 
     p {
       margin: 2%;
+      font-size: 1.6rem;
     }
     ul {
       text-align: left;
+      font-size: 1.4rem;
     }
   }
 `;
