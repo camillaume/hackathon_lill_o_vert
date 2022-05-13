@@ -11,6 +11,8 @@ export default styled.div`
     height: 55vh;
     display: flex;
     justify-content: center;
+    margin-left: 17%;
+    margin-top: 2%;
   }
   .contact {
     color: var(--main-color);
@@ -24,22 +26,20 @@ export default styled.div`
     aspect-ratio: 1/1;
   }
   .title {
-    border-radius: 10px 10px 0 0;
-    background-color: var(--main-color);
-    color: var(--white-color);
+    color: var(--color);
     font-family: var(--font-family);
-    font-size: 1.3rem;
+    font-size: 2rem;
     height: 7vh;
-    display: flex;
     align-items: center;
-    padding-left: 5vw;
+    text-align: center;
+    padding-top: 2vh;
   }
   @media screen and (max-width: 700px) {
     .team {
-      width: 90vw;
     }
     h2 {
       width: 100%;
+      font-size: 1.3rem;
     }
     ul {
       flex-direction: column;
@@ -60,10 +60,13 @@ export default styled.div`
     .icon {
       width: 7vw;
     }
+    .contact-container {
+      margin-left: 5vw;
+      margin-top: 5vh;
+    }
   }
   @media screen and (min-width: 700px) {
     .team {
-      width: 60vw;
       font-size: 1.3rem;
     }
     ul {
