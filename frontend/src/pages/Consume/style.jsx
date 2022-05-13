@@ -10,13 +10,9 @@ export default styled.div`
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 1.5rem;
   }
   ul {
     max-width: 70vw;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
   }
   li {
     padding: 0.3rem;
@@ -45,16 +41,23 @@ export default styled.div`
   @media screen and (min-width: 700px) {
     flex-direction: row;
     h1 {
-      padding-right: 6rem;
+      box-sizing: border-box;
+      display: flex;
+      align-items: flex-end;
+      padding-left: 2%;
+      text-align: left;
+      width: 100%;
+      height: 20%;
       font-weight: bold;
       font-size: 2rem;
-      margin-top: 4rem;
     }
     ul {
+      box-sizing: border-box;
       line-height: 1.7rem;
-      max-width: 38vw;
-      margin: 10%;
-      margin-top: 5%;
+      width: 100%;
+      height: 80%;
+      padding: 2%;
+      padding-right: 8%;
     }
     li {
       padding: 0.5rem;
@@ -75,6 +78,7 @@ export default styled.div`
       width: 50vw;
     }
     .speach {
+      box-sizing: border-box;
       width: 50vw;
     }
   }
