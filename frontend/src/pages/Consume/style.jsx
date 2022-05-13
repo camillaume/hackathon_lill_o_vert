@@ -10,18 +10,21 @@ export default styled.div`
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
   ul {
     max-width: 70vw;
-    margin: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 1rem;
   }
   li {
     padding: 0.3rem;
     font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: justify;
   }
-  .test {
+  .left {
     margin: 0.5rem;
     justify-content: center;
     height: 50vh;
@@ -36,6 +39,7 @@ export default styled.div`
   .speach {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   @media screen and (min-width: 700px) {
@@ -56,7 +60,7 @@ export default styled.div`
       padding: 0.5rem;
       font-size: 1.5rem;
     }
-    .test {
+    .left {
       margin-top: 3rem;
       margin-left: 3rem;
       height: 58vh;

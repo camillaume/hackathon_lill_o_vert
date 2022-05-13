@@ -4,7 +4,7 @@ import SMap from "./style";
 export default function Map() {
   return (
     <SMap>
-      <div className="test">
+      <div className="left">
         <Iframe
           className="map"
           src="https://zerodechet.gogocarto.fr/annuaire?iframe=1&noheader=1#/carte/lille@50.657,3.154,12z?cat=all"
