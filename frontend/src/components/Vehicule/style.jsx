@@ -35,6 +35,10 @@ export default styled.section`
     height: 3.2vh;
     aspect-ratio: 1/1;
     margin: 0.25vw 0 0.25vw 0;
+    :hover {
+      background-color: var(--main-color);
+      border: 5px var(--main-color);
+    }
   }
   .vehicules {
     display: flex;
