@@ -3,6 +3,7 @@ import styled from "styled-components";
 export default styled.div`
   display: flex;
   flex-direction: column;
+  background-color: var(--back-color);
   font-family: var(--font-family);
   color: var(--color);
   h1 {

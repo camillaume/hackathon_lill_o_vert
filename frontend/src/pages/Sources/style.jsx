@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export default styled.section`
   display: flex;
+  background-color: var(--back-color);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: var(--back-color);
   text-align: center;
   height: 85vh;
   width: auto;
