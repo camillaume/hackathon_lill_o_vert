@@ -1,4 +1,4 @@
-import Vehicule from "../../components/Vehicule/index";
+import Vehicule from "../../components/Vehicule";
 import Calculator from "../../components/Calculator";
 
 function Mobility() {

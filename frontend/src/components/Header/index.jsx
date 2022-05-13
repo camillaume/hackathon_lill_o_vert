@@ -20,7 +20,7 @@ export default function Header() {
       <Burger burger={burgerOpen} func={toggleBurger} />
       <div className="navigation">
         <ul>
-          <Link to="/mobilty">
+          <Link to="/mobility">
             <li>SE DEPLACER CONSCIEMMENT</li>
           </Link>
           <Link to="/consume">

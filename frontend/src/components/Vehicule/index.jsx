@@ -50,13 +50,13 @@ export default function Vehicule() {
   return (
     <SVehicule>
       <section>
-        <div className="km">
-          <form onSubmit={hSubmit}>
-            <p>Nombre de kilomètres</p>
-            <input id="nbKm" type="number" value={kms} onChange={hChange} />
-            <input type="submit" value="OK" />
-          </form>
-          <div>
+        <form onSubmit={hSubmit}>
+          <p>Trajet quotidien aller/retour (kms)</p>
+          <input id="nbKm" type="number" value={kms} onChange={hChange} />
+          <input type="submit" value="OK" />
+        </form>
+        <div className="comparison">
+          <div className="images">
             {images.map((image, idx) => {
               return (
                 /* eslint-disable */
@@ -71,20 +71,31 @@ export default function Vehicule() {
               );
             })}
           </div>
+          <div className="vehicules">
+            {vehicules
+              .sort((a, b) =>
+                a.emissions.kgco2e > b.emissions.kgco2e ? 1 : -1
+              )
+              .map((vehicule) => {
+                return (
+                  <div key={vehicule.id}>
+                    <div className="vehicule">
+                      <progress
+                        className="resultImg"
+                        max="200"
+                        value={vehicule.emissions.kgco2e * kms * 20}
+                      />
+                      <p className="resultText">
+                        {Math.round(vehicule.emissions.kgco2e * kms * 220 * 1) /
+                          1}{" "}
+                        kgco2e
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
         </div>
-        {vehicules
-          .sort((a, b) => (a.emissions.kgco2e > b.emissions.kgco2e ? 1 : -1))
-          .map((vehicule) => {
-            return (
-              <div key={vehicule.id} className="vehicule">
-                <div className="resultImg">{vehicule.name}</div>
-                <p className="resultText">
-                  {Math.round(vehicule.emissions.kgco2e * kms * 1000) / 1000}
-                  kgco2e
-                </p>
-              </div>
-            );
-          })}
       </section>
     </SVehicule>
   );

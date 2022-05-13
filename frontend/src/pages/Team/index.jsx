@@ -1,7 +1,7 @@
 import Style from "./style";
 
-const linkedinImg = `./src/assets/pictures/linkedin-icon.svg`;
-const githubImg = `./src/assets/pictures/github-icon.svg`;
+const linkedinImg = "./src/assets/pictures/linkedin-icon.svg";
+const githubImg = "./src/assets/pictures/github-icon.svg";
 
 export default function Team() {
   const contacts = [
@@ -39,7 +39,7 @@ export default function Team() {
   return (
     <Style>
       <div className="team">
-        <h3 className="title">Team</h3>
+        <h3 className="title">L&apos;EQUIPE</h3>
         <ul>
           {contacts.map((contact) => (
             <li className="contact" key={contact.name}>
