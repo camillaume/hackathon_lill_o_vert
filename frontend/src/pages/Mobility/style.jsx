@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.section`
   font-family: var(--font-family);
-  
+  background-color: var(--back-color);
 
   .mobility {
     width: 80vw;
@@ -23,17 +23,23 @@ export default styled.section`
     line-height: 4vh;
     font-weight: bold;
   }
-
+  .note {
+    font-style: italic;
+    color: var(--color);
+    text-align: center;
+    margin-top: 1vh;
+  }
   @media screen and (max-width: 700px) {
     .mobility {
-    width: 90vw;
-  }
+      width: 90vw;
+    }
     .components {
       width: 90vw;
       display: flex;
-      flex-direction:column;
-  }
-  .explications{
-    color:var(--main-color);
+      flex-direction: column;
+    }
+    .explications {
+      color: var(--main-color);
+    }
   }
 `;
