@@ -17,9 +17,10 @@ export default styled.footer`
     }
 
     li {
-      font-size: 2rem;
+      font-size: 1.5rem;
       color: rgba(232, 225, 221);
       margin-right: 3rem;
+      font-family: var(--font-family);
     }
     a {
       text-decoration: none;

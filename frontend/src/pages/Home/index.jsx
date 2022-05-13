@@ -4,7 +4,14 @@ export default function Home() {
   return (
     <SHome>
       <div>
-        <h2>Changeons nos habitudes & transformons la métropole lilloise!</h2>
+        <div className="baseline">
+          <img
+            className="leaf"
+            src="../../../src/assets/pictures/feuille.svg"
+            alt="i"
+          />
+          <h2>Changeons nos habitudes & transformons la métropole lilloise!</h2>
+        </div>
 
         <picture>
           <source
@@ -17,7 +24,11 @@ export default function Home() {
           />
         </picture>
         <div className="display">
-          <p className="quote">&quot;</p>
+          <img
+            className="quote1"
+            src="../../../src/assets/pictures/guill-gauche.svg"
+            alt="i"
+          />
           <p className="text">
             L&apos;écologie doit être aujourd&apos;hui au cœur de notre projet
             de société pour les générations futures. Grâce à Lille o&apos; Vert,
@@ -26,7 +37,11 @@ export default function Home() {
             découvrez des cartographies de la métropole lilloise qui permettent
             de consommer de manière responsable.
           </p>
-          <p className="quote">&quot;</p>
+          <img
+            className="quote2"
+            src="../../../src/assets/pictures/guill-droit.svg"
+            alt="i"
+          />
         </div>
       </div>
     </SHome>

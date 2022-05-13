@@ -13,6 +13,12 @@ export default function Burger({ ...props }) {
       <div className="nav">
         <ul>
           <li>
+            <Link to="/Mobility">Mobilité responsable</Link>
+          </li>
+          <li>
+            <Link to="/Consume">Eco-consommation</Link>
+          </li>
+          <li>
             <Link to="/Team">Equipe</Link>
           </li>
           <li>

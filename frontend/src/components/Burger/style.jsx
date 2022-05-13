@@ -10,6 +10,7 @@ export default styled.div`
     position: absolute;
     right: 20px;
     top: 20px;
+    font-family: var(--font-family);
   }
   .burger {
     width: 2rem;
@@ -33,8 +34,9 @@ export default styled.div`
 
   a {
     text-decoration: none;
-    color: var(--white-color);
+    color: rgba(232, 225, 221);
     font-size: 1.08rem;
+    padding: 0 0.5rem;
   }
 
   li {

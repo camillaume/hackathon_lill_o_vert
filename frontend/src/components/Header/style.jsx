@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export default styled.header`
   height: 15vh;
-  background-color: var(--back-color);
   display: flex;
 
   .navigation {
@@ -19,6 +18,7 @@ export default styled.header`
 
   a {
     text-decoration: none;
+    font-family: var(--font-family);
   }
 
   @media screen and (min-width: 700px) {
@@ -51,14 +51,17 @@ export default styled.header`
 
     li {
       color: var(--main-color);
-      font-size: 1.7rem;
+      font-size: 1.5rem;
       margin-right: 2rem;
       margin-left: 1.5rem;
       width: 17vw;
       text-align: center;
+      font-family: var(--font-family);
 
       :hover {
         border-bottom: 5px solid var(--main-color);
+        margin-bottom: -2rem;
+        padding-bottom: 1.8rem;
       }
     }
   }
