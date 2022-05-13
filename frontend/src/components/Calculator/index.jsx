@@ -4,6 +4,7 @@ import Hamburger from "../../assets/pictures/hamburger.png";
 import Pomme from "../../assets/pictures/pomme.png";
 import Chauffage from "../../assets/pictures/chauffage.png";
 import context from "../../services/Context/Ctx";
+import SCalculator from "./style";
 
 const calculator = () => {
   const [co2, setCo2] = useState(0);
@@ -31,16 +32,28 @@ const calculator = () => {
   // };
   if (!curvehicle.emissions) return <div />;
   return (
-    <div>
-      <h2>{calcMeatMeal()}</h2>
-      <img src={Hamburger} alt="hamburger" />
-      <h2>{calcVeganMeal()}</h2>
-      <img src={Pomme} alt="pomme" />
-      <h2>{calcWater()}</h2>
-      <img src={Robinet} alt="robinet" />
-      <h2>{calcHeat()}</h2>
-      <img src={Chauffage} alt="chauffage" />
-    </div>
+    <SCalculator>
+      <section>
+        <div className="ensemble">
+          {/* <div> */}
+          <img src={Hamburger} className="hamburger" alt="hamburger" />
+          {/* </div> */}
+          <h2>{calcMeatMeal()}</h2>
+        </div>
+        <div className="ensemble">
+          <img src={Pomme} alt="pomme" />
+          <h2>{calcVeganMeal()}</h2>
+        </div>
+        <div className="ensemble">
+          <img src={Robinet} alt="robinet" />
+          <h2>{calcWater()}</h2>
+        </div>
+        <div className="ensemble">
+          <img src={Chauffage} alt="chauffage" />
+          <h2>{calcHeat()}</h2>
+        </div>
+      </section>
+    </SCalculator>
   );
 };
 export default calculator;
