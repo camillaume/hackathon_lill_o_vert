@@ -18,18 +18,18 @@ export default function Map() {
         <ul>
           <li>
             {" "}
-            L’éco-responsabilité c&apos;est tenir compte dans son quotidien, des
-            différents impacts environnementaux de notre mode de vie. Il s’agit
-            avant tout d’une démarche qui consiste à mettre en place des
-            habitudes dans le but de limiter son empreinte écologique et son
-            impact sur la planète. A ces pratiques se greffe un véritable état
-            d’esprit, celui de se sentir responsable face à l’environnement car
-            il n’est pas le seul bénéficiaire de cette démarche, nous jouissons
-            tous de ses bienfaits.
+            L&apos;éco-responsabilité, c&apos;est tenir compte dans son
+            quotidien des différents impacts environnementaux de son mode de
+            vie. Il s&apos;agit d&apos;une démarche qui consiste à mettre en
+            place des habitudes dans le but de limiter son empreinte écologique
+            et son impact sur la planète. À ces pratiques se greffe un véritable
+            état d&apos;esprit : celui de se sentir responsable face à
+            l&apos;environnement car il n’est pas le seul bénéficiaire de cette
+            démarche, nous jouissons tous de ses bienfaits.
           </li>
           <li>
             Cette carte ci-contre vous permet par des filtres de trouver autour
-            de chez vous, des magasins de vrac, des ateliers de réparation
+            de chez vous des magasins de vrac, des ateliers de réparation
             communautaires, des sites de dons et d&apos;échanges ou encore des
             composteurs.
           </li>

@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 export default styled.div`
+  height: 75vh;
+  background-color: var(--back-color);
+
   .team {
     border-radius: 10px;
-    background-color: var(--back-color);
+    /* background-color: var(--back-color); */
     font-family: var(--font-family);
     font-size: 0.65rem;
   }
@@ -35,6 +38,7 @@ export default styled.div`
     padding-top: 2vh;
   }
   @media screen and (max-width: 700px) {
+    height: 85vh;
     .team {
     }
     h2 {

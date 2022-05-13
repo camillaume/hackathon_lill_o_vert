@@ -3,6 +3,7 @@ import styled from "styled-components";
 export default styled.div`
   display: flex;
   flex-direction: column;
+  height: 85vh;
   background-color: var(--back-color);
   font-family: var(--font-family);
   color: var(--color);
@@ -41,6 +42,7 @@ export default styled.div`
 
   @media screen and (min-width: 700px) {
     flex-direction: row;
+    height: 75vh;
     h1 {
       box-sizing: border-box;
       display: flex;
