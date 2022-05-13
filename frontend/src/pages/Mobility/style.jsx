@@ -3,6 +3,7 @@ import styled from "styled-components";
 export default styled.section`
   font-family: var(--font-family);
   background-color: var(--back-color);
+  height: 100%;
 
   .mobility {
     width: 80vw;

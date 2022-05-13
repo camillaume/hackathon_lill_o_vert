@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
+  height: 85vh;
   display: flex;
   background-color: var(--back-color);
   h2 {
@@ -43,6 +44,7 @@ export default styled.div`
   }
 
   @media screen and (min-width: 700px) {
+    height: 75vh;
     .baseline {
       position: relative;
       width: 34em;
@@ -53,6 +55,10 @@ export default styled.div`
     h2 {
       font-size: 2rem;
       margin: 0;
+    }
+    p {
+      display: flex;
+      align-items: flex-end;
     }
 
     .leaf {
@@ -66,6 +72,7 @@ export default styled.div`
 
     source,
     .display {
+      height: 100%;
       width: 100vw;
       background-color: var(--main-color);
     }
