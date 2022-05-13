@@ -4,14 +4,38 @@ import SMap from "./style";
 export default function Map() {
   return (
     <SMap>
-      <Iframe
-        width="800"
-        height="600"
-        src="https://zerodechet.gogocarto.fr/annuaire?iframe=1&fullTaxonomy=0&noheader=1#/carte/@50.654,3.143,12z?cat=all@+d6n14r18u22y25be31bg33bi36bj37bm39bd41bq40bs45bu47bw49by51ca43cc55ce57cb59ci58cj62cl64cn66cp68cr70ct72cv74cx"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-      />
+      <div className="left">
+        <Iframe
+          className="map"
+          src="https://zerodechet.gogocarto.fr/annuaire?iframe=1&noheader=1#/carte/lille@50.657,3.154,12z?cat=all"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        />
+      </div>
+      <div className="speach">
+        <h1>Consommer autrement, est-ce possible ?</h1>
+        <ul>
+          <li>
+            {" "}
+            L&apos;éco-responsabilité, c&apos;est tenir compte dans son
+            quotidien des différents impacts environnementaux de son mode de
+            vie. Il s&apos;agit d&apos;une démarche qui consiste à mettre en
+            place des habitudes dans le but de limiter son empreinte écologique
+            et son impact sur la planète. À ces pratiques se greffe un véritable
+            état d&apos;esprit : celui de se sentir responsable face à
+            l&apos;environnement car il n’est pas le seul bénéficiaire de cette
+            démarche, nous jouissons tous de ses bienfaits.
+          </li>
+          <li>
+            Cette carte ci-contre vous permet par des filtres de trouver autour
+            de chez vous des magasins de vrac, des ateliers de réparation
+            communautaires, des sites de dons et d&apos;échanges ou encore des
+            composteurs.
+          </li>
+          <li>Changer vos habitudes est maintenant à portée de votre main.</li>
+        </ul>
+      </div>
     </SMap>
   );
 }
