@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
 import SVehicule from "./style";
 import velo from "../../assets/pictures/velo.svg";
@@ -9,10 +9,12 @@ import voiture from "../../assets/pictures/voiture.svg";
 import voitureElectrique from "../../assets/pictures/voiture-electrique.svg";
 import scooter from "../../assets/pictures/scooter.svg";
 import tram from "../../assets/pictures/tram.svg";
+import context from "../../services/Context/Ctx";
 
 export default function Vehicule() {
   const [vehicules, setVehicules] = useState([]);
-  const [kms, setKms] = useState(0);
+  const { kms, setKms, setCurvehicle } = useContext(context);
+
   const images = [
     velo,
     trotinette,
@@ -40,7 +42,8 @@ export default function Vehicule() {
         `https://api.monimpacttransport.fr/beta/getEmissionsPerDistance?&fields=emoji,description`
       )
       .then(({ data }) => {
-        return setVehicules(data);
+        setVehicules(data);
+        setCurvehicle(data[5]);
       });
   }, []);
 
@@ -54,8 +57,18 @@ export default function Vehicule() {
             <input type="submit" value="OK" />
           </form>
           <div>
-            {images.map((image) => {
-              return <img alt="transport" src={image} />;
+            {images.map((image, idx) => {
+              return (
+                /* eslint-disable */
+                <img
+                  alt="transport"
+                  src={image}
+                  onClick={() => {
+                    setCurvehicle(vehicules[idx]);
+                  }}
+                />
+                /* eslint-enable */
+              );
             })}
           </div>
         </div>
